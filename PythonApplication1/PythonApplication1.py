@@ -46,7 +46,7 @@ def virustotalhash(jsonfile):
             print("-" * 40)
             time.sleep(5)
         json.dump(file,jsonfile,indent=2)
-    print("file saved!")          
+    print("File saved!")          
 
 
 
