@@ -1,0 +1,8 @@
+<Solution>
+  <Folder Name="/Solution Items/">
+    <File Path="pythontest.txt" />
+  </Folder>
+  <Project Path="PythonApplication1/PythonApplication1.pyproj" Type="888888a0-9f3d-457c-b088-3a5042f75d52" Id="df69eb7c-cfeb-4c49-8ce5-8f86d137a004">
+    <Build Project="false" />
+  </Project>
+</Solution>
