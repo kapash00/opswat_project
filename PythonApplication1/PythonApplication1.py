@@ -33,14 +33,15 @@ def virustotalhash(jsonfile):
                 response = requests.get(url, headers=headers)
                 if response.status_code == 200:
                     result_data = response.json()
-                    stats = result_data.get("data", {}).get("attributes", {}).get("last_analysis_stats", {})
+                    stats = result_data.get("data", {}).get("attributes", {})#.get("last_analysis_stats", {})
                     malicious_count = stats.get("malicious", 0)
+                    print(stats.keys())
                     print(f" ->{malicious_count}")
-                    fhash["status"]=malicious_count
+                    fhash["status"]=stats
                 elif response.status_code == 404:
                     print(" ->Hash not found.")
                 else:
-                    print(f" -> שגיאה: קוד סטטוס {response.status_code}")
+                    print(f" ->Connection failed: {response.status_code}")
             except Exception as e:
                 print(f" -> תקלת חיבור: {e}")
             print("-" * 40)
