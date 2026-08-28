@@ -1,0 +1,271 @@
+OPSWAT
+MetaDefender Drive Report ID: 390d015d-76d2-4334-bbce-5e8dad84e033
+Scan Type: Custom Scan
+MetaDefender Drive Type: MetaDefender Drive Digital Display
+Start Time: 08/23/2026 15:34:01 GMT
+Stop Time: 08/23/2026 18:43:49 GMT
+Total Processed Files: 291655
+Total Potentially Infected Files: 1
+Total Potentially Vulnerable Files: 0
+Total Files with Sensitive Data Detected: 0
+Total Files with COO Detected: 0
+Total Skipped or Errors Files: 27
+   - Skipped due to "Encrypted Archive": 15
+   - Skipped due to "Failed: Extraction Error": 2
+   - Skipped due to "Failed: Extraction Error: Extraction Error": 10
+Total No Threats Found: 291627
+Final Verdict: Unsafe Device
+
+MDD version: 4.4.7.11890
+Host machine serial number (system / Service Tag): Defaultstring
+CPU: Intel(R) Core(TM) i5-8500 CPU @ 3.00GHz
+CPU cores: 6
+Memory: 7.6G
+Hostname: TRI07183
+Host OS: Windows 10 Enterprise LTSC 2019
+Brand name:  Default Default string
+Device Type: Drive with Digital Display
+USB Interface: USB 3.0
+IP Address:
+             
+             
+             
+             
+
+Device MAC Address:
+                     00:30:64:63:AA:99
+                     C4:00:AD:83:5D:D7
+                     C4:00:AD:83:5D:D8
+                     00:30:64:63:AA:98
+
+Bios product name: Default string
+Bios version: 5.13
+Bios release date: 12/03/2019
+Firmware updates available: No
+
+Archive settings:
+                   Max recursion level:                               2147483646
+                   Max number of files extracted:                     2147483646
+                   Max total size of extracted files (in megabytes):  819605
+                   Enable scan of original unextracted archive:       Yes
+                   Timeout for archive analysis (in minutes):         3
+
+Scan Results settings:
+                        BIOS Vulnerabilities:  Yes
+                        Skipped Files:         Yes
+                        Cancelled Scans:       Yes
+
+Disks Status and Remediation:
+                               Recovery:  mounted
+                                      Type:          Partition
+                                      File system:   ntfs
+                                      Capacity:      499MB
+                                      Hardware ID:   B8F648BEF6487F1E
+                                      Mounted path:  /media/Disk2/
+                                      Device:        /dev/sdb2
+                                      Disk serial:   W9C5BK10
+
+                               Disk3:     mounted
+                                      Type:          Partition
+                                      File system:   vfat
+                                      Capacity:      99MB
+                                      Hardware ID:   E249-0BAD
+                                      Mounted path:  /media/Disk3/
+                                      Device:        /dev/sdb3
+                                      Disk serial:   W9C5BK10
+
+                               Windows:   mounted
+                                      Type:          Partition
+                                      File system:   ntfs
+                                      Capacity:      200.4GB
+                                      Hardware ID:   EC384CDF384CAB02
+                                      Mounted path:  /media/Disk4/
+                                      Device:        /dev/sdb4
+                                      Disk serial:   W9C5BK10
+
+                               Backup:    mounted
+                                      Type:          Partition
+                                      File system:   ntfs
+                                      Capacity:      730.4GB
+                                      Hardware ID:   DC327EF1327ECFCE
+                                      Mounted path:  /media/Disk5/
+                                      Device:        /dev/sdb5
+                                      Disk serial:   W9C5BK10
+
+                               Disk1:     unmounted
+                                      Type:          Partition
+                                      File system:   
+                                      Capacity:      128MB
+                                      Hardware ID:   
+                                      Mounted path:  
+                                      Device:        /dev/sdb1
+                                      Disk serial:   W9C5BK10
+
+                               Disk6:     unmounted
+                                      Type:          CDrom
+                                      File system:   
+                                      Capacity:      1024MB
+                                      Hardware ID:   
+                                      Mounted path:  
+                                      Device:        /dev/sr0
+                                      Disk serial:   KM5K79B4620
+
+
+Engine Status:
+    Avira:
+        Version:            4.15.30-2573
+        Definition Date:    2026-07-28T09:38:00.000Z
+
+    Bitdefender:
+        Version:            3.0.1.399-2537
+        Definition Date:    2026-07-28T07:48:54.000Z
+
+    ESET:
+        Version:            1.5.5.0-2666
+        Definition Date:    2026-07-28T00:00:00.000Z
+
+
+Scan Paths:
+             Recovery/
+             Disk3/
+             Windows/
+             Backup/
+
+
+--------Bootsector Files--------
+Filename: //dev/sdb//block/0/1
+SHA256: 5f22436349eeb91f38661719aa807f76aace949875ace94d9db14ffd5ddb7b23
+Result: No Threat Detected
+Filename: //dev/sdb2//block/0/1
+SHA256: 352eb96f0a4451775b3dfda8e48e158f4266f3b20d8c44898e7cef46096e9249
+Result: No Threat Detected
+Filename: //dev/sdb3//block/0/1
+SHA256: 8fb1c68e55dcfd27c0e1a72d5d0802d801542dcf02c7b19c1fe7ae7216679023
+Result: No Threat Detected
+Filename: //dev/sdb4//block/0/1
+SHA256: 13f7f4fd2da34ac1ed1dd506d0574f6f64cd09d9b41c4bfc481df67285f1cd41
+Result: No Threat Detected
+Filename: //dev/sdb5//block/0/1
+SHA256: 1502d334849684707f44d1bb5c49d7851a0dcf14e2f356e22cdcc2d78aae3686
+Result: No Threat Detected
+--------Firmware Files--------
+BIOS ROM dump file: bios.bin
+SHA256: 436dacaca6f2072aefcdee3f3d3bc5065d8a5081962ece5e6d29b2df6e341179
+Result: No Threat Detected
+--------Infected Files--------
+Filename: Windows/pagefile.sys
+SHA256: eeab0520b7958352ed0058098da4c1f8a48522997759ab1449648b9cc6b3cf14
+Result: Infected
+     --------Engines--------
+          Engine: Avira
+          Threatname: TR/JS.Downloader.BOX
+
+--------Skipped Files or Errors--------
+Filename: Windows/Program Files (x86)/Trioptics GmbH/OptiCentric 9/Resources/CommonData.zip
+SHA256: 906666eaea0a765352cc150164bba159eec0916c2a0394a1a96285acd50ab14f
+Result: Encrypted Archive
+
+Filename: Windows/Program Files (x86)/Trioptics GmbH/OptiCentric 9 -backup 20230614/Resources/CommonData.zip
+SHA256: a74c4bc15484c489917454ae6932a29db164f1245a881d5ff5fe3b1698b64e22
+Result: Encrypted Archive
+
+Filename: Windows/Program Files (x86)/Trioptics GmbH/OptiCentric 9 -backup old version/Resources/CommonData.zip
+SHA256: ee51fde5c035857f6a1421c9c01c4d5ff8d20a62a8f1c8d3804018037a6f07bc
+Result: Encrypted Archive
+
+Filename: Windows/Program Files (x86)/Trioptics GmbH/OptiCentric 9 -backup version 126RC22/Resources/CommonData.zip
+SHA256: 62173d269c9e6f2b741f605aa6c14c6e186b2282666ca8560441e699e765413d
+Result: Encrypted Archive
+
+Filename: Windows/Users/trioptics/Desktop/Engineering/Last Software Update/OptiCentric9_2.0.4_x86.msi
+SHA256: 5fcdeca85cff4bd911f0bcc539dc48fa47d3e793fa79a3a2c7aa403e55f6ca11
+Result: Encrypted Archive
+
+Filename: Windows/Users/trioptics/Desktop/Engineering/OptiCentric VIS-MWIR S.N 04-700-0012/OptiCentric 9 Resources/CommonData.zip
+SHA256: 906666eaea0a765352cc150164bba159eec0916c2a0394a1a96285acd50ab14f
+Result: Encrypted Archive
+
+Filename: Windows/Windows/Installer/14293.msi
+SHA256: 5fcdeca85cff4bd911f0bcc539dc48fa47d3e793fa79a3a2c7aa403e55f6ca11
+Result: Encrypted Archive
+
+Filename: Windows/Windows/SoftwareDistribution/Download/8603f208d9d721da4d5edbbd5f020585/Windows10.0-KB4601558-x64.cab
+SHA256: cb53f741544985bbbf226a4bd1ab390db2491b03056989f3c8b63d7e7942c6d3
+Result: Failed: Extraction Error: Extraction Error
+
+Filename: Windows/Windows/SoftwareDistribution/Download/SharedFileCache/a7cf5f736daa83af3ec445e567c7640d6b9213b70771023c153d79c2e6025bd7
+SHA256: a7cf5f736daa83af3ec445e567c7640d6b9213b70771023c153d79c2e6025bd7
+Result: Failed: Extraction Error: Extraction Error
+
+Filename: Windows/Windows/SoftwareDistribution/Download/SharedFileCache/108fe4522bd5d58f41deeb7fce6a5f0c11ea793ce25caf0f1ad161f7d7805c52
+SHA256: 108fe4522bd5d58f41deeb7fce6a5f0c11ea793ce25caf0f1ad161f7d7805c52
+Result: Failed: Extraction Error: Extraction Error
+
+Filename: Windows/Windows/SoftwareDistribution/Download/SharedFileCache/1afa91e450c7981112030c9754b177dcdb9a08fad22f766409a49f1a96e0e2d2
+SHA256: 1afa91e450c7981112030c9754b177dcdb9a08fad22f766409a49f1a96e0e2d2
+Result: Failed: Extraction Error: Extraction Error
+
+Filename: Windows/Windows/SoftwareDistribution/Download/b17067a776695aa8d9acce0be63503ea448d82ed
+SHA256: d91fc12be40831ed625857267cd8357cf7b40de0b4923d0f43feb551f32bb24c
+Result: Failed: Extraction Error: Extraction Error
+
+Filename: Windows/Windows/SoftwareDistribution/Download/SharedFileCache/eb31fc9d7ffdbf1dabaff4af0edbce685231d4eb0bb571f316c3d21d38f1ca6f
+SHA256: eb31fc9d7ffdbf1dabaff4af0edbce685231d4eb0bb571f316c3d21d38f1ca6f
+Result: Failed: Extraction Error: Extraction Error
+
+Filename: Windows/Windows/SoftwareDistribution/Download/SharedFileCache/cd9c1674415db312d4cffd2c0b3b9931282b447ed1a22307375748519481eda3
+SHA256: cd9c1674415db312d4cffd2c0b3b9931282b447ed1a22307375748519481eda3
+Result: Failed: Extraction Error: Extraction Error
+
+Filename: Windows/Windows/SoftwareDistribution/Download/45455d29c08661553e2ea284bca44ece1a1420fa
+SHA256: 8691e491ae52760067d6547e28ae727d2fd462c11c32ce6cb111b775768e122d
+Result: Failed: Extraction Error: Extraction Error
+
+Filename: Windows/Windows/SoftwareDistribution/Download/de49bcb61f36428fb59d72abe07a064e/Windows10.0-KB5003541-x64.cab
+SHA256: ab197ed1388f5b153022baa3351a575060998a44f7d36ec27f8ea4e4c24b69a9
+Result: Failed: Extraction Error: Extraction Error
+
+Filename: Windows/Windows/SoftwareDistribution/Download/0ab641025370c009087913795065331fc188253a
+SHA256: 8bc93cda4688e2d6d56c27e3d0969b3360fad0aecddb4002663cabfd04c56e62
+Result: Failed: Extraction Error: Extraction Error
+
+Filename: Backup/OptiCentricData/Log/OptiCentric9_SP_04-700-0012_250325_081012.zip
+SHA256: 26218279ecffc07f5d8bfcedcc0cdc31bbc997513b181f4756e45e3626447011
+Result: Encrypted Archive
+
+Filename: Backup/TRI07183/Backup Set 2021-11-01 120001/Backup Files 2021-11-01 120001/Backup files 3.zip
+SHA256: fdb562f3f6aa5849ac9636ce4af7c32368e3c6542aec448bf211756a1008efce
+Result: Encrypted Archive
+
+Filename: Backup/TRI07183/Backup Set 2024-04-01 120001/Backup Files 2024-04-01 120001/Backup files 2.zip
+SHA256: ef10b01eb8806bf5bb4a389a2489de555695df7934110571da6eb50b0202dd58
+Result: Encrypted Archive
+
+Filename: Backup/TRI07183/Backup Set 2025-01-01 120001/Backup Files 2025-09-01 120001/Backup files 2.zip
+SHA256: dc330e2d5311abd1a0732914abbd415a3a7c69e1def8acd77b9a5c67a01671ed
+Result: Encrypted Archive
+
+Filename: Backup/TRI07183/Backup Set 2023-03-01 120001/Backup Files 2023-08-01 120001/Backup files 2.zip
+SHA256: 6c391787a253d2008fbdc95f0b2841bebe3235e198229b381adc84bbd3b9825a
+Result: Encrypted Archive
+
+Filename: Backup/TRI07183/Backup Set 2026-06-01 120001/Backup Files 2026-06-01 120001/Backup files 5.zip
+SHA256: a7758e4461be7e0f52a43fe28568b0a045fb27cba8ab012f2290c7602f841878
+Result: Encrypted Archive
+
+Filename: Backup/TRI07183/Backup Set 2025-01-01 120001/Backup Files 2025-01-01 120001/Backup files 3.zip
+SHA256: a0ac432bbbeb6aaa93598daf0b7bf6043078c947d8a67ab812b1011a4c8f5cbf
+Result: Encrypted Archive
+
+Filename: Backup/TRI07183/Backup Set 2026-06-01 120001/Backup Files 2026-06-01 120001/Backup files 3.zip
+SHA256: c374383b6cac5830accae8fab3b269ffbae67f7bdb8e832b20737aec453cf2f9
+Result: Encrypted Archive
+
+Filename: Backup/WindowsImageBackup/DESKTOP-94V5R27/Backup 2021-07-15 104804/a36d20ec-4339-4e59-bad7-10b9235afeba.vhdx
+SHA256: 7634188199da7512ac40598cc720b99eb92a55c6e8060c8c88fb19419aefad70
+Result: Failed: Extraction Error
+
+Filename: Backup/WindowsImageBackup/TRI07183/Backup 2026-07-01 090013/f0851926-5b01-45c7-ad40-7f3447220573.vhdx
+SHA256: 029863c72a52ce3f12b38e39ab862ab356c13166107e03e8bbffd98040964c4e
+Result: Failed: Extraction Error
+

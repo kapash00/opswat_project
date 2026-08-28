@@ -1,0 +1,146 @@
+OPSWAT
+MetaDefender Drive Report ID: 568242d2-fff7-494e-af24-c57be4d3b5f8
+Scan Type: Custom Scan
+MetaDefender Drive Type: MetaDefender Drive Digital Display
+Start Time: 08/26/2026 10:27:49 GMT
+Stop Time: 08/26/2026 18:53:56 GMT
+Total Processed Files: 138103
+Total Potentially Infected Files: 5
+Total Potentially Vulnerable Files: 0
+Total Files with Sensitive Data Detected: 0
+Total Files with COO Detected: 0
+Total Skipped or Errors Files: 0
+Total No Threats Found: 138098
+Final Verdict: Unsafe Device
+
+MDD version: 4.4.7.11890
+Host machine serial number (system / Service Tag): Defaultstring
+CPU: Intel(R) Core(TM) i5-6500 CPU @ 3.20GHz
+CPU cores: 4
+Memory: 3.7G
+Hostname: TRI04754
+Host OS: Windows 7 Professional
+Brand name:  Default Default string
+Device Type: Drive with Digital Display
+USB Interface: USB 3.0
+IP Address:
+             
+             
+
+Device MAC Address:
+                     00:0B:AB:DC:D0:2C
+                     00:0B:AB:DC:D0:2D
+
+Bios product name: Default string
+Bios version: 5.11
+Bios release date: 12/25/2015
+Firmware updates available: No
+
+Archive settings:
+                   Max recursion level:                               2147483646
+                   Max number of files extracted:                     2147483646
+                   Max total size of extracted files (in megabytes):  819605
+                   Enable scan of original unextracted archive:       Yes
+                   Timeout for archive analysis (in minutes):         3
+
+Scan Results settings:
+                        BIOS Vulnerabilities:  Yes
+                        Skipped Files:         Yes
+                        Cancelled Scans:       Yes
+
+Disks Status and Remediation:
+                               System-reserviert:  mounted
+                                      Type:          Partition
+                                      File system:   ntfs
+                                      Capacity:      100MB
+                                      Hardware ID:   0254EB2554EB19E5
+                                      Mounted path:  /media/Disk1/
+                                      Device:        /dev/sdb1
+                                      Disk serial:   WD-WMAYP0P03162
+
+                               Disk2:              mounted
+                                      Type:          Partition
+                                      File system:   ntfs
+                                      Capacity:      186.9GB
+                                      Hardware ID:   EE48F9C648F98E19
+                                      Mounted path:  /media/Disk2/
+                                      Device:        /dev/sdb2
+                                      Disk serial:   WD-WMAYP0P03162
+
+                               Backup:             mounted
+                                      Type:          Partition
+                                      File system:   ntfs
+                                      Capacity:      270.5GB
+                                      Hardware ID:   E47AA8CA7AA89AB6
+                                      Mounted path:  /media/Disk3/
+                                      Device:        /dev/sdb3
+                                      Disk serial:   WD-WMAYP0P03162
+
+                               Disk4:              unmounted
+                                      Type:          CDrom
+                                      File system:   
+                                      Capacity:      1024MB
+                                      Hardware ID:   
+                                      Mounted path:  
+                                      Device:        /dev/sr0
+                                      Disk serial:   K1KHAPF0611
+
+
+Engine Status:
+    Avira:
+        Version:            4.15.30-2573
+        Definition Date:    2026-07-28T09:38:00.000Z
+
+    Bitdefender:
+        Version:            3.0.1.399-2537
+        Definition Date:    2026-07-28T07:48:54.000Z
+
+    ESET:
+        Version:            1.5.5.0-2666
+        Definition Date:    2026-07-28T00:00:00.000Z
+
+
+Scan Paths:
+             System-reserviert/
+             Disk2/
+             Backup/
+
+
+--------Bootsector Files--------
+Filename: //dev/sdb//block/0/1
+SHA256: b3fff99c4e901d66427804030d1c7e4db9483b8e5d94eb9ae6ff780e70fd5370
+Result: No Threat Detected
+Filename: //dev/sdb1//block/0/1
+SHA256: 144b072072e041e1c9ebdb6689fd7a17ea87910d7b7900a859991507a262c976
+Result: No Threat Detected
+Filename: //dev/sdb2//block/0/1
+SHA256: 62965ac7d6cbe2026cd9a6e95fc34940b263eef206945202e79351c219bc8708
+Result: No Threat Detected
+Filename: //dev/sdb3//block/0/1
+SHA256: 97415f18e90f05e43e64cc43dbf22ac457a2d7296800dfa2f6cb7f5fddb1ff2b
+Result: No Threat Detected
+--------Firmware Files--------
+BIOS ROM dump file: bios.bin
+SHA256: 56821f81531e8a292c2386ef08286bb21f7c4da222b038734c4f0b5e992618c0
+Result: No Threat Detected
+--------Infected Files--------
+Filename: Backup/TRI04754/Backup Set 2018-06-01 120000/Backup Files 2018-08-01 120000/Backup files 1.zip
+SHA256: 51882caf8b5ac08ccd192714956d37a48bb004d0fc4f6400d16c7f229482c8ff
+Result: Infected Files in Archive
+
+Filename: Backup/TRI04754/Backup Set 2018-12-01 120000/Backup Files 2018-12-01 120000/Backup files 1.zip
+SHA256: 3eb5bf6177c6f54554a3397432312ab551428887381250366f4c6e423c175f2d
+Result: Infected Files in Archive
+
+Filename: Backup/TRI04754/Backup Set 2019-05-01 120003/Backup Files 2019-05-01 120003/Backup files 1.zip
+SHA256: 08323976151f2757d7aff918fe9175e163b70f7c311085913c30787fba30f1a9
+Result: Infected Files in Archive
+
+Filename: Backup/TRI04754/Backup Set 2020-01-01 120000/Backup Files 2020-01-01 120000/Backup files 1.zip
+SHA256: 92399733857e1fe8596129f0ab22c08c14c1099f8d28ee8d5d7da3589d07f76a
+Result: Infected Files in Archive
+
+Filename: Backup/TRI04754/Backup Set 2020-12-01 120000/Backup Files 2020-12-01 120000/Backup files 1.zip
+SHA256: b3b1818fe7fc02b87ea63c41db09d35af7cef5cac378dcb2d12e4096f8785625
+Result: Infected Files in Archive
+
