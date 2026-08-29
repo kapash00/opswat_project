@@ -237,13 +237,13 @@
       "Backup/WindowsImageBackup/DESKTOP-94V5R27/Backup 2021-07-15 104804/a36d20ec-4339-4e59-bad7-10b9235afeba.vhdx"
     ],
     "hash": "7634188199da7512ac40598cc720b99eb92a55c6e8060c8c88fb19419aefad70",
-    "status": "N/A"
+    "status": ""
   },
   "029863c72a52ce3f12b38e39ab862ab356c13166107e03e8bbffd98040964c4e": {
     "filename": [
       "Backup/WindowsImageBackup/TRI07183/Backup 2026-07-01 090013/f0851926-5b01-45c7-ad40-7f3447220573.vhdx"
     ],
     "hash": "029863c72a52ce3f12b38e39ab862ab356c13166107e03e8bbffd98040964c4e",
-    "status": "N/A"
+    "status": ""
   }
 }

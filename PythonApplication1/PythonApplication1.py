@@ -1,6 +1,7 @@
 #"C:\\Users\\shaha\\source\\repos\\PythonApplication1\\pythontest.txt"
 import json
 import time
+import csv
 from urllib import response
 import requests
 results = {}
@@ -83,8 +84,27 @@ def virustotalhash(jsonfile):
                    error=True
                    print(f" ->ERROR: {e}")
             print("-" * 40)
-            time.sleep(4)
+            time.sleep(3)
         json.dump(file,jsonfile,indent=2) 
+        #writing final report
+        print("Creating final report...")
+        freport = "C:\\Users\\shaha\\source\\repos\\opswat_project\\final_report.csv"
+        with open(freport,"w", newline='', encoding='utf-8')as report:
+            fields=["Hash","Paths","Status"]
+            writer = csv.DictWriter(report, fieldnames=fields)
+            writer.writeheader()
+            for fhash in file.values():
+                status = fhash.get("status", "")
+                if isinstance(status, dict):
+                  malicious_count = status.get("malicious", 0)
+                if status == "N/A" or malicious_count >0:
+                      path= " | ".join(fhash["filename"])
+                      writer.writerow({"Hash": fhash,"Paths": path,"Status": status})
+
+                          
+                           
+
+
     if error ==True:
         print("NOTE! an error happend will runnin, some results may not appear")
     print("File saved!")          
