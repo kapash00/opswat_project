@@ -165,28 +165,12 @@ Filename: Windows/Program Files (x86)/Trioptics GmbH/OptiCentric 9/Resources/Com
 SHA256: 906666eaea0a765352cc150164bba159eec0916c2a0394a1a96285acd50ab14f
 Result: Encrypted Archive
 
-Filename: Windows/Program Files (x86)/Trioptics GmbH/OptiCentric 9 -backup 20230614/Resources/CommonData.zip
-SHA256: a74c4bc15484c489917454ae6932a29db164f1245a881d5ff5fe3b1698b64e22
-Result: Encrypted Archive
-
-Filename: Windows/Program Files (x86)/Trioptics GmbH/OptiCentric 9 -backup old version/Resources/CommonData.zip
-SHA256: ee51fde5c035857f6a1421c9c01c4d5ff8d20a62a8f1c8d3804018037a6f07bc
-Result: Encrypted Archive
-
 Filename: Windows/Program Files (x86)/Trioptics GmbH/OptiCentric 9 -backup version 126RC22/Resources/CommonData.zip
 SHA256: 62173d269c9e6f2b741f605aa6c14c6e186b2282666ca8560441e699e765413d
 Result: Encrypted Archive
 
-Filename: Windows/Users/trioptics/Desktop/Engineering/Last Software Update/OptiCentric9_2.0.4_x86.msi
-SHA256: 5fcdeca85cff4bd911f0bcc539dc48fa47d3e793fa79a3a2c7aa403e55f6ca11
-Result: Encrypted Archive
-
 Filename: Windows/Users/trioptics/Desktop/Engineering/OptiCentric VIS-MWIR S.N 04-700-0012/OptiCentric 9 Resources/CommonData.zip
 SHA256: 906666eaea0a765352cc150164bba159eec0916c2a0394a1a96285acd50ab14f
-Result: Encrypted Archive
-
-Filename: Windows/Windows/Installer/14293.msi
-SHA256: 5fcdeca85cff4bd911f0bcc539dc48fa47d3e793fa79a3a2c7aa403e55f6ca11
 Result: Encrypted Archive
 
 Filename: Windows/Windows/SoftwareDistribution/Download/8603f208d9d721da4d5edbbd5f020585/Windows10.0-KB4601558-x64.cab
@@ -195,10 +179,6 @@ Result: Failed: Extraction Error: Extraction Error
 
 Filename: Windows/Windows/SoftwareDistribution/Download/SharedFileCache/a7cf5f736daa83af3ec445e567c7640d6b9213b70771023c153d79c2e6025bd7
 SHA256: a7cf5f736daa83af3ec445e567c7640d6b9213b70771023c153d79c2e6025bd7
-Result: Failed: Extraction Error: Extraction Error
-
-Filename: Windows/Windows/SoftwareDistribution/Download/SharedFileCache/108fe4522bd5d58f41deeb7fce6a5f0c11ea793ce25caf0f1ad161f7d7805c52
-SHA256: 108fe4522bd5d58f41deeb7fce6a5f0c11ea793ce25caf0f1ad161f7d7805c52
 Result: Failed: Extraction Error: Extraction Error
 
 Filename: Windows/Windows/SoftwareDistribution/Download/SharedFileCache/1afa91e450c7981112030c9754b177dcdb9a08fad22f766409a49f1a96e0e2d2
@@ -229,43 +209,6 @@ Filename: Windows/Windows/SoftwareDistribution/Download/0ab641025370c00908791379
 SHA256: 8bc93cda4688e2d6d56c27e3d0969b3360fad0aecddb4002663cabfd04c56e62
 Result: Failed: Extraction Error: Extraction Error
 
-Filename: Backup/OptiCentricData/Log/OptiCentric9_SP_04-700-0012_250325_081012.zip
-SHA256: 26218279ecffc07f5d8bfcedcc0cdc31bbc997513b181f4756e45e3626447011
-Result: Encrypted Archive
 
-Filename: Backup/TRI07183/Backup Set 2021-11-01 120001/Backup Files 2021-11-01 120001/Backup files 3.zip
-SHA256: fdb562f3f6aa5849ac9636ce4af7c32368e3c6542aec448bf211756a1008efce
-Result: Encrypted Archive
 
-Filename: Backup/TRI07183/Backup Set 2024-04-01 120001/Backup Files 2024-04-01 120001/Backup files 2.zip
-SHA256: ef10b01eb8806bf5bb4a389a2489de555695df7934110571da6eb50b0202dd58
-Result: Encrypted Archive
-
-Filename: Backup/TRI07183/Backup Set 2025-01-01 120001/Backup Files 2025-09-01 120001/Backup files 2.zip
-SHA256: dc330e2d5311abd1a0732914abbd415a3a7c69e1def8acd77b9a5c67a01671ed
-Result: Encrypted Archive
-
-Filename: Backup/TRI07183/Backup Set 2023-03-01 120001/Backup Files 2023-08-01 120001/Backup files 2.zip
-SHA256: 6c391787a253d2008fbdc95f0b2841bebe3235e198229b381adc84bbd3b9825a
-Result: Encrypted Archive
-
-Filename: Backup/TRI07183/Backup Set 2026-06-01 120001/Backup Files 2026-06-01 120001/Backup files 5.zip
-SHA256: a7758e4461be7e0f52a43fe28568b0a045fb27cba8ab012f2290c7602f841878
-Result: Encrypted Archive
-
-Filename: Backup/TRI07183/Backup Set 2025-01-01 120001/Backup Files 2025-01-01 120001/Backup files 3.zip
-SHA256: a0ac432bbbeb6aaa93598daf0b7bf6043078c947d8a67ab812b1011a4c8f5cbf
-Result: Encrypted Archive
-
-Filename: Backup/TRI07183/Backup Set 2026-06-01 120001/Backup Files 2026-06-01 120001/Backup files 3.zip
-SHA256: c374383b6cac5830accae8fab3b269ffbae67f7bdb8e832b20737aec453cf2f9
-Result: Encrypted Archive
-
-Filename: Backup/WindowsImageBackup/DESKTOP-94V5R27/Backup 2021-07-15 104804/a36d20ec-4339-4e59-bad7-10b9235afeba.vhdx
-SHA256: 7634188199da7512ac40598cc720b99eb92a55c6e8060c8c88fb19419aefad70
-Result: Failed: Extraction Error
-
-Filename: Backup/WindowsImageBackup/TRI07183/Backup 2026-07-01 090013/f0851926-5b01-45c7-ad40-7f3447220573.vhdx
-SHA256: 029863c72a52ce3f12b38e39ab862ab356c13166107e03e8bbffd98040964c4e
-Result: Failed: Extraction Error
 

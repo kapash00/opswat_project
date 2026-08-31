@@ -95,25 +95,21 @@ def virustotalhash(jsonfile):
             writer.writeheader()
             for fhash in file.values():
                 status = fhash.get("status", "")
+                #malicious_count = 0
                 if isinstance(status, dict):
                   malicious_count = status.get("malicious", 0)
                 if status == "N/A" or malicious_count >0:
                       path= " | ".join(fhash["filename"])
-                      writer.writerow({"Hash": fhash,"Paths": path,"Status": status})
-
-                          
-                           
-
-
+                      writer.writerow({"Hash": fhash.get("hash"),"Paths": path,"Status": status})
     if error ==True:
         print("NOTE! an error happend will runnin, some results may not appear")
     print("File saved!")          
 
 
 
-filepath="C:\\Users\\shaha\\source\\repos\\opswat_project\\ex_file.txt"
-jsonfile="C:\\Users\\shaha\\source\\repos\\opswat_project\\jsonfile.json"
-readfile(filepath)
-virustotalhash(jsonfile)
+#filepath="C:\\Users\\shaha\\source\\repos\\opswat_project\\ex_file.txt"
+#jsonfile="C:\\Users\\shaha\\source\\repos\\opswat_project\\jsonfile.json"
+#readfile(filepath)
+#virustotalhash(jsonfile)
 
     
