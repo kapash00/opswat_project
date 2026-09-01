@@ -1,5 +1,7 @@
+import json
 import tkinter as tk
 from tkinter import filedialog
+from tkinter import messagebox
 from PythonApplication1 import readfile, virustotalhash
 
 # משתנים לשמירת נתיבי הקבצים כדי שנוכל לגשת אליהם אחר כך
@@ -31,14 +33,15 @@ def run_analysis():
     if report_path:
         print(f"File== {report_path}")
         # הפעלת הפונקציות מתוך הקובץ המקושר
-        readfile(report_path)
-        virustotalhash(whitelist_path)
+        allhash = readfile(report_path)
+        virustotalhash(whitelist_path,allhash)
+        messagebox.showinfo("File path =",f"")
     else:
         print("Error-- choose a file!")
 
 # --- בניית החלון הראשי ---
-root = tk.Tk()
-root.title("Hash Analyzer Tool")
+root = tk.Tk(screenName="Opswat report scanner", baseName="Opswat report scanner")
+root.title("Opswat report scanner")
 root.geometry("450x300")
 
 # כפתור ותווית לדוח
@@ -57,5 +60,8 @@ lbl_whitelist_path.pack()
 btn_run = tk.Button(root, text="Start script!", command=run_analysis, bg="lightblue", font=("Arial", 12, "bold"))
 btn_run.pack(pady=30)
 
-# הפעלת הלולאה של הממשק - שום קוד לא ירוץ אחרי השורה הזו עד שהחלון ייסגר
+#כפתור סגירה
+#button = tk.Button(root, text="Exit", command=root.destroy)
+#button.pack()
+
 root.mainloop()

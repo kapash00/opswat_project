@@ -2,6 +2,7 @@
 import json
 import time
 import csv
+import os
 from urllib import response
 import requests
 results = {}
@@ -28,21 +29,24 @@ def readfile(file_name):
                  results[vhash]["filename"].append(filename)
              else:
                  results[vhash]={"filename":[filename],"hash":vhash,"status":""}
-    with open("C:\\Users\\shaha\\source\\repos\\opswat_project\\jsonfile.json","w") as jsonfile:
+    script_dir = os.path.dirname(os.path.abspath(__file__))  
+    freport = os.path.join(script_dir, "Allhash.json")
+    with open(freport,"w") as jsonfile:
          json.dump(results,jsonfile,indent=2) #הכנסת האיבר לגייסון
+    return freport
 
-def whitelistloading():
+def whitelistloading(whitelist_path):
     #open approved file to set
     print("Loading Whitelist files...")
     print("-" * 40)
     values={""}
-    with open("C:\\Users\\shaha\\source\\repos\\opswat_project\\approved.txt","r")as file:
+    with open(whitelist_path,"r")as file:
         for vhash in file:
             vhash=vhash.strip()
             values.add(vhash)
     return values
         
-def virustotalhash(jsonfile):
+def virustotalhash(whitelist_path,allhash):
     
     api="ee6ea0b4c9885f5b75ed60a4f16d9df873f6c3ddec9066c7d895412dcdddb437"
     
@@ -50,10 +54,10 @@ def virustotalhash(jsonfile):
     "accept": "application/json",
     "x-apikey": api
 }
-    with open ("C:\\Users\\shaha\\source\\repos\\opswat_project\\jsonfile.json","r") as jsonfile:
+    with open (allhash,"r") as jsonfile:
         file = json.load(jsonfile) #טעינה למשתנה כדי לעבוד 
-    with open ("C:\\Users\\shaha\\source\\repos\\opswat_project\\jsonfile.json","w") as jsonfile:
-        values=whitelistloading()
+    with open (allhash,"w") as jsonfile:
+        values=whitelistloading(whitelist_path)
         error=False
         for fhash in file.values():
             key=fhash.get("hash")
@@ -88,7 +92,8 @@ def virustotalhash(jsonfile):
         json.dump(file,jsonfile,indent=2) 
         #writing final report
         print("Creating final report...")
-        freport = "C:\\Users\\shaha\\source\\repos\\opswat_project\\final_report.csv"
+        script_dir = os.path.dirname(os.path.abspath(__file__))  
+        freport = os.path.join(script_dir, "final_report.csv")
         with open(freport,"w", newline='', encoding='utf-8')as report:
             fields=["Hash","Paths","Status"]
             writer = csv.DictWriter(report, fieldnames=fields)
