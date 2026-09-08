@@ -108,13 +108,11 @@ def virustotalhash(whitelist_path,allhash):
                       writer.writerow({"Hash": fhash.get("hash"),"Paths": path,"Status": status})
     if error ==True:
         print("NOTE! an error happend will runnin, some results may not appear")
-    print("File saved!")          
+    print("File saved!")  
+    return freport
 
 
 
-#filepath="C:\\Users\\shaha\\source\\repos\\opswat_project\\ex_file.txt"
-#jsonfile="C:\\Users\\shaha\\source\\repos\\opswat_project\\jsonfile.json"
-#readfile(filepath)
-#virustotalhash(jsonfile)
+
 
     

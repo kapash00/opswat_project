@@ -25,6 +25,7 @@
     <Compile Include="PythonApplication1.py" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Allhash.json" />
     <Content Include="TRI07183_RecoveryWindowsBackup_CustomScan_23-Aug-2026_15-34-00.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />

@@ -51,28 +51,5 @@
       "failure": 0,
       "type-unsupported": 15
     }
-  },
-  "cd9c1674415db312d4cffd2c0b3b9931282b447ed1a22307375748519481eda3": {
-    "filename": [
-      "Windows/Windows/SoftwareDistribution/Download/SharedFileCache/cd9c1674415db312d4cffd2c0b3b9931282b447ed1a22307375748519481eda3"
-    ],
-    "hash": "cd9c1674415db312d4cffd2c0b3b9931282b447ed1a22307375748519481eda3",
-    "status": "N/A"
-  },
-  "8bc93cda4688e2d6d56c27e3d0969b3360fad0aecddb4002663cabfd04c56e62": {
-    "filename": [
-      "Windows/Windows/SoftwareDistribution/Download/0ab641025370c009087913795065331fc188253a"
-    ],
-    "hash": "8bc93cda4688e2d6d56c27e3d0969b3360fad0aecddb4002663cabfd04c56e62",
-    "status": {
-      "malicious": 0,
-      "suspicious": 0,
-      "undetected": 54,
-      "harmless": 0,
-      "timeout": 4,
-      "confirmed-timeout": 0,
-      "failure": 0,
-      "type-unsupported": 13
-    }
   }
 }

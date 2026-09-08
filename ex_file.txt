@@ -177,13 +177,7 @@ Filename: Windows/Windows/SoftwareDistribution/Download/b17067a776695aa8d9acce0b
 SHA256: d91fc12be40831ed625857267cd8357cf7b40de0b4923d0f43feb551f32bb24c
 Result: Failed: Extraction Error: Extraction Error
 
-Filename: Windows/Windows/SoftwareDistribution/Download/SharedFileCache/cd9c1674415db312d4cffd2c0b3b9931282b447ed1a22307375748519481eda3
-SHA256: cd9c1674415db312d4cffd2c0b3b9931282b447ed1a22307375748519481eda3
-Result: Failed: Extraction Error: Extraction Error
 
-Filename: Windows/Windows/SoftwareDistribution/Download/0ab641025370c009087913795065331fc188253a
-SHA256: 8bc93cda4688e2d6d56c27e3d0969b3360fad0aecddb4002663cabfd04c56e62
-Result: Failed: Extraction Error: Extraction Error
 
 
 

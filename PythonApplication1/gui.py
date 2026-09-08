@@ -1,5 +1,6 @@
 import json
 import tkinter as tk
+import os
 from tkinter import filedialog
 from tkinter import messagebox
 from PythonApplication1 import readfile, virustotalhash
@@ -34,17 +35,16 @@ def run_analysis():
         print(f"File== {report_path}")
         # הפעלת הפונקציות מתוך הקובץ המקושר
         allhash = readfile(report_path)
-        virustotalhash(whitelist_path,allhash)
-        messagebox.showinfo("File path =",f"")
+        fpath=virustotalhash(whitelist_path,allhash)
+        messagebox.showinfo("File path ",f"Path for the final report= {fpath}")
+        os.system(f'explorer /select,"{fpath}"')
     else:
         print("Error-- choose a file!")
 
-# --- בניית החלון הראשי ---
 root = tk.Tk(screenName="Opswat report scanner", baseName="Opswat report scanner")
 root.title("Opswat report scanner")
 root.geometry("450x300")
 
-# כפתור ותווית לדוח
 btn_report = tk.Button(root, text=" Opswat report ", command=select_report, width=20)
 btn_report.pack(pady=(20, 5))
 lbl_report_path = tk.Label(root, text="No file selected", fg="gray")
