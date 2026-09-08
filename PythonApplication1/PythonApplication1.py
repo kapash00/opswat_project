@@ -48,7 +48,7 @@ def whitelistloading(whitelist_path):
         
 def virustotalhash(whitelist_path,allhash):
     
-    api="ee6ea0b4c9885f5b75ed60a4f16d9df873f6c3ddec9066c7d895412dcdddb437"
+    api="1c42215d75a8792b67e9a6dcac825db4b84e28a1109dcbc36ace0c75650f3015"
     
     headers = {
     "accept": "application/json",
