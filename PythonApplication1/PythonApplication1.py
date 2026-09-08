@@ -1,4 +1,3 @@
-#"C:\\Users\\shaha\\source\\repos\\PythonApplication1\\pythontest.txt"
 import json
 import time
 import csv
@@ -32,7 +31,7 @@ def readfile(file_name):
     script_dir = os.path.dirname(os.path.abspath(__file__))  
     freport = os.path.join(script_dir, "Allhash.json")
     with open(freport,"w") as jsonfile:
-         json.dump(results,jsonfile,indent=2) #הכנסת האיבר לגייסון
+         json.dump(results,jsonfile,indent=2) 
     return freport
 
 def whitelistloading(whitelist_path):
@@ -45,17 +44,23 @@ def whitelistloading(whitelist_path):
             vhash=vhash.strip()
             values.add(vhash)
     return values
+
+def loadconfig():
+    path=os.path.dirname(os.path.abspath(__file__)) 
+    path=os.path.join(path,"config.json")
+    with open(path,"r")as file:
+        config_data=json.load(file)
+        return config_data.get("api_key") 
+
         
 def virustotalhash(whitelist_path,allhash):
-    
-    api="1c42215d75a8792b67e9a6dcac825db4b84e28a1109dcbc36ace0c75650f3015"
-    
+    api=loadconfig()    
     headers = {
     "accept": "application/json",
     "x-apikey": api
 }
     with open (allhash,"r") as jsonfile:
-        file = json.load(jsonfile) #טעינה למשתנה כדי לעבוד 
+        file = json.load(jsonfile) 
     with open (allhash,"w") as jsonfile:
         values=whitelistloading(whitelist_path)
         error=False

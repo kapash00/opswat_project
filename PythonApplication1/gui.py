@@ -43,7 +43,7 @@ def run_analysis():
 
 root = tk.Tk(screenName="Opswat report scanner", baseName="Opswat report scanner")
 root.title("Opswat report scanner")
-root.geometry("450x300")
+root.geometry("450x300+1040+50")
 
 btn_report = tk.Button(root, text=" Opswat report ", command=select_report, width=20)
 btn_report.pack(pady=(20, 5))
