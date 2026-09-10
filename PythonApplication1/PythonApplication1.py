@@ -2,6 +2,7 @@ import json
 import time
 import csv
 import os
+import sys
 from urllib import response
 import requests
 results = {}
@@ -46,7 +47,10 @@ def whitelistloading(whitelist_path):
     return values
 
 def loadconfig():
-    path=os.path.dirname(os.path.abspath(__file__)) 
+    if getattr(sys,'frozen', False):
+        path=os.path.dirname(sys.executable)
+    else:
+        path=os.path.dirname(os.path.abspath(__file__)) 
     path=os.path.join(path,"config.json")
     with open(path,"r")as file:
         config_data=json.load(file)
@@ -99,7 +103,8 @@ def virustotalhash(whitelist_path,allhash,file_name_only):
         json.dump(file,jsonfile,indent=2) 
         #writing final report
         print("Creating final report...")
-        script_dir = os.path.expanduser("~")  
+        script_dir = os.path.expanduser("~") 
+        print(script_dir)
         freport = os.path.join(script_dir,"Documents", f"{file_name_only}_final_report.csv")
         with open(freport,"w", newline='', encoding='utf-8')as report:
             fields=["Hash","Paths","Status"]
