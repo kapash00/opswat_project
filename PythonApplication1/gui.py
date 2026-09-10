@@ -35,11 +35,13 @@ def run_analysis():
         print(f"File== {report_path}")
         # הפעלת הפונקציות מתוך הקובץ המקושר
         allhash = readfile(report_path)
-        fpath=virustotalhash(whitelist_path,allhash)
+        file_name_only = os.path.basename(report_path)
+        file_name_only = os.path.splitext(file_name_only)[0]
+        fpath=virustotalhash(whitelist_path,allhash,file_name_only)
         messagebox.showinfo("File path ",f"Path for the final report= {fpath}")
         os.system(f'explorer /select,"{fpath}"')
     else:
-        print("Error-- choose a file!")
+        print("Error -- select a file!")
 
 root = tk.Tk(screenName="Opswat report scanner", baseName="Opswat report scanner")
 root.title("Opswat report scanner")
@@ -57,11 +59,11 @@ lbl_whitelist_path = tk.Label(root, text="No file selected", fg="gray")
 lbl_whitelist_path.pack()
 
 # כפתור הרצה
-btn_run = tk.Button(root, text="Start script!", command=run_analysis, bg="lightblue", font=("Arial", 12, "bold"))
+btn_run = tk.Button(root, text="Start", command=run_analysis,width=20, bg="lightgray", font=("Arial", 12, "bold"))
 btn_run.pack(pady=30)
 
 #כפתור סגירה
-#button = tk.Button(root, text="Exit", command=root.destroy)
-#button.pack()
+button = tk.Button(root, text="Exit", command=root.destroy,width=10)
+button.pack()
 
 root.mainloop()

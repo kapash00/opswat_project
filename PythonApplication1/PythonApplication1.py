@@ -50,11 +50,13 @@ def loadconfig():
     path=os.path.join(path,"config.json")
     with open(path,"r")as file:
         config_data=json.load(file)
-        return config_data.get("api_key") 
+        return config_data
 
         
-def virustotalhash(whitelist_path,allhash):
-    api=loadconfig()    
+def virustotalhash(whitelist_path,allhash,file_name_only):
+    config_data=loadconfig()
+    api=config_data.get("api_key") 
+    sleep_time=config_data.get("sleep_time")
     headers = {
     "accept": "application/json",
     "x-apikey": api
@@ -93,12 +95,12 @@ def virustotalhash(whitelist_path,allhash):
                    error=True
                    print(f" ->ERROR: {e}")
             print("-" * 40)
-            time.sleep(3)
+            time.sleep(sleep_time)
         json.dump(file,jsonfile,indent=2) 
         #writing final report
         print("Creating final report...")
-        script_dir = os.path.dirname(os.path.abspath(__file__))  
-        freport = os.path.join(script_dir, "final_report.csv")
+        script_dir = os.path.expanduser("~")  
+        freport = os.path.join(script_dir,"Documents", f"{file_name_only}_final_report.csv")
         with open(freport,"w", newline='', encoding='utf-8')as report:
             fields=["Hash","Paths","Status"]
             writer = csv.DictWriter(report, fieldnames=fields)
