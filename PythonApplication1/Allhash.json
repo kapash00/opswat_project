@@ -1,0 +1,55 @@
+{
+  "eeab0520b7958352ed0058098da4c1f8a48522997759ab1449648b9cc6b3cf14": {
+    "filename": [
+      "Windows/pagefile.sys"
+    ],
+    "hash": "eeab0520b7958352ed0058098da4c1f8a48522997759ab1449648b9cc6b3cf14",
+    "status": "Whitelisted"
+  },
+  "906666eaea0a765352cc150164bba159eec0916c2a0394a1a96285acd50ab14f": {
+    "filename": [
+      "Windows/Program Files (x86)/Trioptics GmbH/OptiCentric 9/Resources/CommonData.zip"
+    ],
+    "hash": "906666eaea0a765352cc150164bba159eec0916c2a0394a1a96285acd50ab14f",
+    "status": "N/A"
+  },
+  "5fcdeca85cff4bd911f0bcc539dc48fa47d3e793fa79a3a2c7aa403e55f6ca11": {
+    "filename": [
+      "Windows/Windows/Installer/14293.msi"
+    ],
+    "hash": "5fcdeca85cff4bd911f0bcc539dc48fa47d3e793fa79a3a2c7aa403e55f6ca11",
+    "status": "N/A"
+  },
+  "cb53f741544985bbbf226a4bd1ab390db2491b03056989f3c8b63d7e7942c6d3": {
+    "filename": [
+      "Windows/Windows/SoftwareDistribution/Download/8603f208d9d721da4d5edbbd5f020585/Windows10.0-KB4601558-x64.cab"
+    ],
+    "hash": "cb53f741544985bbbf226a4bd1ab390db2491b03056989f3c8b63d7e7942c6d3",
+    "status": {
+      "malicious": 0,
+      "suspicious": 0,
+      "undetected": 63,
+      "harmless": 0,
+      "timeout": 0,
+      "confirmed-timeout": 0,
+      "failure": 0,
+      "type-unsupported": 12
+    }
+  },
+  "d91fc12be40831ed625857267cd8357cf7b40de0b4923d0f43feb551f32bb24c": {
+    "filename": [
+      "Windows/Windows/SoftwareDistribution/Download/b17067a776695aa8d9acce0be63503ea448d82ed"
+    ],
+    "hash": "d91fc12be40831ed625857267cd8357cf7b40de0b4923d0f43feb551f32bb24c",
+    "status": {
+      "malicious": 0,
+      "suspicious": 0,
+      "undetected": 58,
+      "harmless": 0,
+      "timeout": 1,
+      "confirmed-timeout": 0,
+      "failure": 0,
+      "type-unsupported": 15
+    }
+  }
+}
